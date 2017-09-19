@@ -8,7 +8,8 @@ public class Controller {
 
         Position position = new Position();
         for (int i = 0; i < command.length(); i++) {
-            String character = getCharacter(command, i);
+            Character c = command.charAt(i);
+            String character = getCharacter(c);
 
             if (character.equals("L")) {
                 position.setX(position.getX() -1);
@@ -18,8 +19,7 @@ public class Controller {
         return position;
     }
 
-    private String getCharacter(String command, int i) {
-        Character c = command.charAt(i);
+    private String getCharacter(Character c) {
         return new String(c.toString());
     }
 }
