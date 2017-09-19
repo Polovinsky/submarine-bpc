@@ -2,11 +2,15 @@ package me.polovinskycode.domain.model;
 
 public class Position {
 
-    private Integer x;
-    private Integer y;
-    private Integer z;
+    private int x;
+    private int y;
+    private int z;
 
-    public Position(Integer x, Integer y, Integer z) {
+    public Position() {
+
+    }
+
+    public Position(int x, int y, int z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -21,5 +25,29 @@ public class Position {
                 .append(" ")
                 .append(z)
                 .toString();
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getZ() {
+        return z;
+    }
+
+    public void setX(Integer x) {
+        this.x = x;
+    }
+
+    public void setY(Integer y) {
+        this.y = y;
+    }
+
+    public void setZ(Integer z) {
+        this.z = z;
     }
 }
