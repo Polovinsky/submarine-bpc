@@ -2,7 +2,7 @@ package me.polovinskycode.domain.model;
 
 import me.polovinskycode.domain.type.Compass;
 
-import static me.polovinskycode.domain.type.Compass.NORTE;
+import static me.polovinskycode.domain.type.Compass.NORTH;
 
 public class Position {
 
@@ -15,7 +15,7 @@ public class Position {
         this.x = 0;
         this.y = 0;
         this.z = 0;
-        this.compass = NORTE;
+        this.compass = NORTH;
     }
 
     public Position(int x, int y, int z) {

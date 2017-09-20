@@ -17,9 +17,9 @@ public class LeftTest {
     }
 
     @Test
-    public void move_withCommand_L_shouldReturnPosition() throws Exception {
+    public void move_withCommand_L_settedUp_NORTE_shouldReturnPosition() throws Exception {
         Position position = new Position();
         left.move(position);
-        Assert.assertThat(position.getDirection(), Matchers.is(Compass.OESTE));
+        Assert.assertThat(position.getDirection(), Matchers.is(Compass.WEST));
     }
 }

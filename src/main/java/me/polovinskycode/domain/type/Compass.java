@@ -2,10 +2,10 @@ package me.polovinskycode.domain.type;
 
 public enum Compass {
 
-    NORTE("NORTE"),
-    SUL("SUL"),
-    LESTE("LESTE"),
-    OESTE("OESTE");
+    NORTH("NORTH"),
+    SOUTH("SOUTH"),
+    EAST("EAST"),
+    WEST("WEST");
 
     private String description;
 
