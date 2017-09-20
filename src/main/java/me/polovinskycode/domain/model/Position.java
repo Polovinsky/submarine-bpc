@@ -1,13 +1,21 @@
 package me.polovinskycode.domain.model;
 
+import me.polovinskycode.domain.type.Compass;
+
+import static me.polovinskycode.domain.type.Compass.NORTE;
+
 public class Position {
 
     private int x;
     private int y;
     private int z;
+    private Compass compass;
 
     public Position() {
-
+        this.x = 0;
+        this.y = 0;
+        this.z = 0;
+        this.compass = NORTE;
     }
 
     public Position(int x, int y, int z) {
@@ -39,6 +47,10 @@ public class Position {
         return z;
     }
 
+    public Compass getDirection() {
+        return compass;
+    }
+
     public void setX(Integer x) {
         this.x = x;
     }
@@ -49,5 +61,9 @@ public class Position {
 
     public void setZ(Integer z) {
         this.z = z;
+    }
+
+    public void setDirection(Compass compass) {
+        this.compass = compass;
     }
 }

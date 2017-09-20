@@ -11,9 +11,28 @@ public class Controller {
             Character c = command.charAt(i);
             String character = getCharacter(c);
 
-            if (character.equals("L")) {
-                position.setX(position.getX() -1);
-            }
+
+
+
+
+
+
+            /*switch (position.getDirection()) {
+                case "NORTE":
+                    position.setY(position.getY() + 1);
+                    break;
+                case "SUL":
+                    position.setY(position.getY() - 1);
+                    break;
+                case "LESTE":
+                    position.setX(position.getX() + 1);
+                    break;
+                case "OESTE":
+                    position.setX(position.getX() - 1);
+                    break;
+                default:
+                    break;*/
+
         }
 
         return position;

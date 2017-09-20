@@ -13,4 +13,11 @@ public class ControllerTest {
         Position position = controller.move("L");
         Assert.assertThat(position.getX(), Matchers.equalTo(-1));
     }
+
+    @Test
+    public void move_withCommandLine_R_shouldReturnPositionSubmarine() throws Exception {
+        Controller controller = new Controller();
+        Position position = controller.move("R");
+        Assert.assertThat(position.getX(), Matchers.equalTo(1));
+    }
 }
