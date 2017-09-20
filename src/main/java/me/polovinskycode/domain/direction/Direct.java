@@ -5,6 +5,7 @@ import me.polovinskycode.domain.type.Compass;
 
 import static me.polovinskycode.domain.type.Compass.EAST;
 import static me.polovinskycode.domain.type.Compass.SOUTH;
+import static me.polovinskycode.domain.type.Compass.WEST;
 
 public class Direct implements Direction {
 
@@ -17,6 +18,8 @@ public class Direct implements Direction {
             position.setX(position.getX() + 1);
         } else if (position.getDirection().equals(SOUTH)) {
             position.setY(position.getY() - 1);
+        } else if (position.getDirection().equals(WEST)) {
+            position.setX(position.getX() - 1);
         }
     }
 }
