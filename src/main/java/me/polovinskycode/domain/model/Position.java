@@ -26,6 +26,8 @@ public class Position {
                 .append(y)
                 .append(" ")
                 .append(z)
+                .append(" ")
+                .append(compass.getDescription())
                 .toString();
     }
 

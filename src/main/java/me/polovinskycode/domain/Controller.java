@@ -4,41 +4,14 @@ import me.polovinskycode.domain.model.Position;
 
 public class Controller {
 
-    public Position move(String command) {
+    public Position toMove(String command) {
+        String[] letters = command.split("");
 
-        Position position = new Position();
-        for (int i = 0; i < command.length(); i++) {
-            Character c = command.charAt(i);
-            String character = getCharacter(c);
-
-
-
-
-
-
-
-            /*switch (position.getDirection()) {
-                case "NORTE":
-                    position.setY(position.getY() + 1);
-                    break;
-                case "SUL":
-                    position.setY(position.getY() - 1);
-                    break;
-                case "LESTE":
-                    position.setX(position.getX() + 1);
-                    break;
-                case "OESTE":
-                    position.setX(position.getX() - 1);
-                    break;
-                default:
-                    break;*/
+        for (int i = 0; i < letters.length; i++) {
+            String letter = letters[i];
 
         }
 
-        return position;
-    }
-
-    private String getCharacter(Character c) {
-        return new String(c.toString());
+        return null;
     }
 }
