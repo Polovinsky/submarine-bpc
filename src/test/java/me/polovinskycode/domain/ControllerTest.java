@@ -17,10 +17,9 @@ public class ControllerTest {
         controller = new Controller();
     }
 
-    @Ignore
     @Test
     public void toMove_withCommandLine_shouldReturnPosition() throws Exception {
         Position position = controller.toMove("LMRDDMMUU");
-        assertThat(position.toString(), is("-1 2 0 NORTE"));
+        assertThat(position.toString(), is("-1 2 0 NORTH"));
     }
 }
