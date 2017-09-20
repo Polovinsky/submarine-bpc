@@ -6,6 +6,6 @@ public class Down implements Direction {
 
     @Override
     public void move(Position position) {
-
+        position.setZ(position.getZ() - 1);
     }
 }
