@@ -18,8 +18,8 @@ public class Controller {
 
     public Position toMove(String command) {
         String[] letters = command.split("");
-
         Position position = new Position();
+
         for (int i = 0; i < letters.length; i++) {
             String letter = letters[i];
             captureMove(letter).move(position);
